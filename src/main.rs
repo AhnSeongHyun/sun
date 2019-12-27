@@ -1,10 +1,8 @@
-extern crate clap;
-use clap::App;
+mod misc;
+use std::string::String;
 
 fn main() {
-    let matches = App::new("sun")
-        .version("0.0.1")
-        .about("Utils for me")
-        .author("ash84")
-        .get_matches();
+    let file_path: String = misc::convert_resource_path(String::from("host.yaml"));
+    let content = misc::load_yaml(file_path);
+    println!("{}", content); 
 }
