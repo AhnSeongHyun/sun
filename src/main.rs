@@ -28,11 +28,6 @@ fn main() {
     let config = config::Config {
         host_file_path: host_file_path,
     };
-
-    // let file_path: String = misc::convert_resource_path(String::from("host.yaml"));
-    // let content = misc::load_yaml(file_path);
-    println!("{:#?}", input_command);
-    println!("{:#?}", config);
 }
 
 fn parse_arg(matches: ArgMatches) -> (HostFilePath, Input) {
