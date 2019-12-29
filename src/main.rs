@@ -1,10 +1,9 @@
 mod config;
 mod misc;
-
 extern crate clap;
-use clap::{App, Arg, ArgMatches};
-use std::option::Option;
+use clap::{App, ArgMatches};
 use std::string::String;
+
 type HostFilePath = String;
 type Input = String;
 
@@ -21,6 +20,11 @@ fn main() {
         .get_matches();
 
     let (host_file_path, input_command) = parse_arg(matches);
+
+    if host_file_path.is_empty() {
+        panic!("Invali Argument");
+    }
+
     let config = config::Config {
         host_file_path: host_file_path,
     };

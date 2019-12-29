@@ -7,7 +7,7 @@ pub fn convert_resource_path(file_name: String) -> String {
     let mut path_buf = match p {
         Ok(d) => d,
         Err(error) => {
-            panic!("{:?}", error);
+            panic!("{:#?}", error);
         }
     };
     path_buf.push(String::from("resource"));
