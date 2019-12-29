@@ -1,5 +1,5 @@
 # sun
-> "Run shell command to multiple hosts
+> Run shell command to multiple hosts
 
 ### Getting Started
 
