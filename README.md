@@ -1,13 +1,8 @@
 # sun
-
-> utils for me
-
+> "Run shell command to multiple hosts
 
 ### Getting Started
 
-```shell 
-
-sun http get json https://api.google.com
-sun http post json https://api.google.com   
-
+```shell
+sun -h host.yaml `ls -al /tmp`
 ```
