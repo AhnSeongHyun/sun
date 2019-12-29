@@ -1,3 +1,8 @@
 # sun
+> "Run shell command to multiple hosts
 
-> utils for me
+### Getting Started
+
+```shell
+sun -h host.yaml `ls -al /tmp`
+```
