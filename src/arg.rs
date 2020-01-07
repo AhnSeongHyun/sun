@@ -18,5 +18,5 @@ pub fn get_arg_matches() -> ArgMatches<'static> {
             <INPUT>            'Sets the input file to use'
             ",
         )
-        .get_matches()
+        .get_matches();
 }

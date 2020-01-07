@@ -1,3 +1,3 @@
 pub mod arg;
-pub mod misc;
 pub mod config;
+pub mod misc;
