@@ -8,5 +8,4 @@ mod test {
     fn test_load_yaml_abnormal_path() {
         load_yaml(String::from("test"));
     }
-
 }

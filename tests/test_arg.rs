@@ -16,5 +16,4 @@ mod test {
     fn test_parse_arg() {
         // TODO : https://github.com/clap-rs/clap/issues/1616
     }
-
 }
