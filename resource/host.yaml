@@ -1,3 +1,5 @@
 hosts:
-    - name : test
-    - ip: 10.20.30.33
+    - name : user
+      ip: 10.20.30.33
+    - name: token
+      ip: 10.20.10.23
