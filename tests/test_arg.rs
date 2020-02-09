@@ -3,7 +3,7 @@ mod test {
     use clap::{App, Arg, ArgMatches, Values};
     use std::collections::HashMap;
     use std::string::String;
-    use sun::arg::parse_arg;
+    use sun::arg::arg::parse_arg;
 
     #[test]
     fn test_parse_arg_empty_case() {

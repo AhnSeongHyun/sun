@@ -9,3 +9,4 @@ repository = "https://github.com/AhnSeongHyun/sun"
 
 [dependencies]
 clap = "~2.33.0"
+yaml-rust = "0.4"
