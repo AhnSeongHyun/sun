@@ -1,9 +1,11 @@
 extern crate clap;
-use clap::{App, ArgMatches};
-use std::string::String;
 
-use sun::arg::{get_arg_matches, parse_arg};
-use sun::config::Config;
+mod arg;
+mod config;
+mod entity;
+
+use crate::arg::arg::{get_arg_matches, parse_arg};
+use crate::config::config::{load_hosts, read_config_file, Config};
 
 fn main() {
     let matches = get_arg_matches();
@@ -14,4 +16,6 @@ fn main() {
     }
 
     let config = Config { host_file_path };
+    let config_content = read_config_file(config.host_file_path);
+    let hosts = load_hosts(config_content);
 }
